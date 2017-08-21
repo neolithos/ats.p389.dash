@@ -193,7 +193,7 @@ ui::text_common : _nameless._.gear {
  look_template: txt.peterbilt.389.gear.neo
  text: ""
  # width 140
- coords_l: 86
+ coords_l: 62
  coords_r: 202
  # height: 103
  coords_t: 718
@@ -358,8 +358,8 @@ ui::text : _nameless._.displayint0 {
  text: "<ret>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=40 left=0.35 right=1 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n"
  coords_l: 48
  coords_r: 176
- coords_t: 692
- coords_b: 436
+ coords_t: 650
+ coords_b: 400
  area_l: 1
  area_r: 0
  area_t: 0
@@ -464,8 +464,8 @@ ui::text : _nameless._.displayint1 {
  text: "<ret>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=40 right=0.35 bottom=0.35><br>\r\n<img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30  left=0.35 right=1 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n"
  coords_l: 48
  coords_r: 176
- coords_t: 692
- coords_b: 436
+ coords_t: 650
+ coords_b: 400
  area_l: 1
  area_r: 0
  area_t: 0
@@ -610,8 +610,8 @@ ui::text : _nameless._.displayint2 {
  text: "<ret>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=40 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 left=0.35 right=1 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n"
  coords_l: 48
  coords_r: 176
- coords_t: 692
- coords_b: 436
+ coords_t: 650
+ coords_b: 400
  area_l: 1
  area_r: 0
  area_t: 0
@@ -756,8 +756,8 @@ ui::text : _nameless._.displayint3 {
  text: "<ret>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=40 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 left=0.35 right=1 bottom=0.35><br>\r\n"
  coords_l: 48
  coords_r: 176
- coords_t: 692
- coords_b: 436
+ coords_t: 650
+ coords_b: 400
  area_l: 1
  area_r: 0
  area_t: 0
