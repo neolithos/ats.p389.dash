@@ -1,0 +1,934 @@
+SiiNunit
+{
+ui::window : _nameless.06caf7760 {
+ window_handler: null
+ clip_children: true
+ keep_aspect: none
+ user_string_data: ""
+ fitting: false
+ my_children: 8
+ my_children[0]: _nameless._.kgroundunlit
+ my_children[1]: _nameless._.ackgroundlit
+ my_children[2]: _nameless._.sharedisplay
+ my_children[3]: _nameless._.display0
+ my_children[4]: _nameless._.display1
+ my_children[5]: _nameless._.display2
+ my_children[6]: _nameless._.display3
+ my_children[7]: _nameless._.warning
+ coords_l: 0
+ coords_r: 800
+ coords_t: 800
+ coords_b: 0
+ area_l: 0
+ area_r: 800
+ area_t: 800
+ area_b: 0
+ id: 0
+ layer: 0
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: null
+}
+
+# hintergrund grafik
+ui::text : _nameless._.kgroundunlit {
+ text: "<ret><offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/display.mat height=800\r\n width=800>"
+ coords_l: 0
+ coords_r: 800
+ coords_t: 800
+ coords_b: 0
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 10
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless.06caf7760
+}
+
+# hintergrund grafik beleuchtet
+ui::text : _nameless._.ackgroundlit {
+ text: "<ret><offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/display_lit.mat height=800 width=800>\r\n"
+ coords_l: 0
+ coords_r: 800
+ coords_t: 800
+ coords_b: 0
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 20
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless.06caf7760
+}
+
+# shared screen, wird immer angezeigt
+ui::group : _nameless._.sharedisplay {
+ fitting: false
+ my_children: 11
+ my_children[0]: _nameless._.odometer
+ my_children[1]: _nameless._.gear
+ my_children[2]: _nameless._.trip_len
+ my_children[3]: _nameless._.dz_unten
+ my_children[4]: _nameless._.park
+ my_children[5]: _nameless._.low_fuel
+ my_children[6]: _nameless._.low_air
+ my_children[7]: _nameless._.dz_oben
+ my_children[8]: _nameless._.cruisectrl
+ my_children[9]: _nameless._.cur_speed
+ my_children[10]: _nameless._.direct
+ coords_l: 0
+ coords_r: 800
+ coords_t: 800
+ coords_b: 0
+ area_l: 0
+ area_r: 800
+ area_t: 800
+ area_b: 0
+ id: 950
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless.06caf7760
+}
+
+###############################################################################
+# km Anzeige
+ui::text_common : _nameless._.odometer {
+ value: "2234567\r\n"
+ look_template: txt.peterbilt.389.lcd
+ text: ""
+ coords_l: 425
+ coords_r: 735
+ coords_t: 246
+ coords_b: 181
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1030
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.sharedisplay
+}
+
+# km Trip
+ui::text_common : _nameless._.trip_len {
+ value: "1234|km"
+ look_template: txt.peterbilt.389.lcd_unit
+ text: ""
+ coords_l: 427
+ coords_r: 736
+ coords_t: 178
+ coords_b: 113
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1210
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.sharedisplay
+}
+
+###############################################################################
+# Zeit anzeige
+ui::text_common : _nameless._.dz_oben {
+ value: "12:12"
+ look_template: txt.peterbilt.389.lcd
+ text: ""
+ coords_l: 61
+ coords_r: 371
+ coords_t: 246
+ coords_b: 181
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1050
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.sharedisplay
+}
+
+# Laufstunden
+ui::text_common : _nameless._.dz_unten {
+ value: "999|h"
+ look_template: txt.peterbilt.389.lcd_unit
+ text: ""
+ coords_l: 90
+ coords_r: 371
+ coords_t: 178
+ coords_b: 113
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1280
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.sharedisplay
+}
+
+###############################################################################
+# aktueller Gang
+ui::text_common : _nameless._.gear {
+ value: D12
+ look_template: txt.peterbilt.389.gear.neo
+ text: ""
+ # width 140
+ coords_l: 86
+ coords_r: 202
+ # height: 103
+ coords_t: 718
+ coords_b: 615
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1040
+ layer: 4
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.sharedisplay
+}
+
+ui::text_common : _nameless._.cur_speed {
+ value: "100"
+ look_template: txt.peterbilt.389.cur_speed.neo
+ text: ""
+ # width 170
+ coords_l: 202
+ coords_r: 372
+ # height: 128
+ coords_t: 735
+ coords_b: 607
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1020
+ layer: 4
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.sharedisplay
+}
+
+ui::text_common : _nameless._.cruisectrl {
+ value: "100|km/h"
+ look_template: txt.peterbilt.389.cruisectrl.neo
+ text: ""
+ # width 140
+ coords_l: 372
+ coords_r: 646
+ # height: 103
+ coords_t: 718
+ coords_b: 615
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1100 
+ layer: 4
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.sharedisplay
+}
+
+ui::text_common : _nameless._.direct {
+ value: "NW"
+ look_template: txt.peterbilt.389.text0
+ text: ""
+ coords_l: 48
+ coords_r: 150
+ coords_t: 482
+ coords_b: 392
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1220
+ layer: 4
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.sharedisplay
+}
+
+ui::text : _nameless._.park {
+ text: "<offset hshift=5 vshift=15><img src=/material/ui/dashboard/peterbilt_389/details.mat height=120 width=100 left=0 right=0.35 top=0.6 bottom=1><br>"
+ coords_l: 635
+ coords_r: 768
+ coords_t: 663
+ coords_b: 546
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1270
+ layer: 0
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.sharedisplay
+}
+
+ui::text : _nameless._.low_fuel {
+ text: "<offset hshift=-35 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=120 width=100 left=0.25 right=0.6 top=0.6 bottom=1><br>"
+ coords_l: 663
+ coords_r: 791
+ coords_t: 570
+ coords_b: 442
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1200
+ layer: 0
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.sharedisplay
+}
+
+ui::text : _nameless._.low_air {
+ text: "<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=110 width=100 left=0.62 right=1 top=0.6 bottom=1><br>"
+ coords_l: 641
+ coords_r: 773
+ coords_t: 487
+ coords_b: 376
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1260
+ layer: 0
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.sharedisplay
+}
+
+###############################################################################
+# Display 0
+
+ui::group : _nameless._.display0 {
+ fitting: false
+ my_children: 4
+ my_children[0]: _nameless._.displayint0
+ my_children[1]: _nameless._.economy
+ my_children[2]: _nameless._.average
+ my_children[3]: _nameless._.instant
+ coords_l: 0
+ coords_r: 800
+ coords_t: 800
+ coords_b: 0
+ area_l: 0
+ area_r: 800
+ area_t: 800
+ area_b: 0
+ id: 100
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless.06caf7760
+}
+
+ui::text : _nameless._.displayint0 {
+ text: "<ret>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=40 left=0.35 right=1 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n"
+ coords_l: 48
+ coords_r: 176
+ coords_t: 692
+ coords_b: 436
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display0
+}
+
+ui::text_common : _nameless._.economy {
+ value: "Economy"
+ look_template: txt.peterbilt.389.text0
+ text: ""
+ coords_l: 107
+ coords_r: 658
+ coords_t: 655
+ coords_b: 572
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 0
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display0
+}
+
+ui::text_common : _nameless._.average {
+ value: "9.2|mpg"
+ look_template: txt.peterbilt.389.val_num
+ text: ""
+ coords_l: 96
+ coords_r: 646
+ coords_t: 572
+ coords_b: 482
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1170
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display0
+}
+
+ui::text_common : _nameless._.instant {
+ value: "25|mpg"
+ look_template: txt.peterbilt.389.val_num
+ text: ""
+ coords_l: 96
+ coords_r: 646
+ coords_t: 482
+ coords_b: 392
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1160
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display0
+}
+
+###############################################################################
+# Display 1
+
+ui::group : _nameless._.display1 {
+ fitting: false
+ my_children: 6
+ my_children[0]: _nameless._.displayint1
+ my_children[1]: _nameless._.fuel_text
+ my_children[2]: _nameless._.fueltext
+ my_children[3]: _nameless._.fuel
+ my_children[4]: _nameless._.fueldisttext
+ my_children[5]: _nameless._.fueldist
+ coords_l: 0
+ coords_r: 800
+ coords_t: 800
+ coords_b: 0
+ area_l: 0
+ area_r: 800
+ area_t: 800
+ area_b: 0
+ id: 200
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless.06caf7760
+}
+
+ui::text : _nameless._.displayint1 {
+ text: "<ret>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=40 right=0.35 bottom=0.35><br>\r\n<img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30  left=0.35 right=1 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n"
+ coords_l: 48
+ coords_r: 176
+ coords_t: 692
+ coords_b: 436
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display1
+}
+
+ui::text_common : _nameless._.fuel_text {
+ value: "Range"
+ look_template: txt.peterbilt.389.text0
+ text: ""
+ coords_l: 107
+ coords_r: 658
+ coords_t: 655
+ coords_b: 572
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 0
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display1
+}
+
+ui::text_common : _nameless._.fueltext {
+ value: "Fuel"
+ look_template: txt.peterbilt.389.text1.neo
+ text: ""
+ coords_l: 170
+ coords_r: 316
+ coords_t: 572
+ coords_b: 482
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display1
+}
+
+ui::text_common : _nameless._.fuel {
+ value: "99|gal"
+ look_template: txt.peterbilt.389.val_num
+ text: ""
+ coords_l: 316
+ coords_r: 646
+ coords_t: 572
+ coords_b: 482
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1060
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display1
+}
+
+ui::text_common : _nameless._.fueldisttext {
+ value: "Dist."
+ look_template: txt.peterbilt.389.text1.neo
+ text: ""
+ coords_l: 170
+ coords_r: 316
+ coords_t: 482
+ coords_b: 392
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display1
+}
+
+ui::text_common : _nameless._.fueldist {
+ value: "99999|km"
+ look_template: txt.peterbilt.389.val_num
+ text: ""
+ coords_l: 316
+ coords_r: 646
+ coords_t: 482
+ coords_b: 392
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1080
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display1
+}
+
+###############################################################################
+# Display 2
+
+ui::group : _nameless._.display2 {
+ fitting: false
+ my_children: 6
+ my_children[0]: _nameless._.displayint2
+ my_children[1]: _nameless._.oilwater
+ my_children[2]: _nameless._.watertext
+ my_children[3]: _nameless._.watertemp
+ my_children[4]: _nameless._.oiltext
+ my_children[5]: _nameless._.oiltemp
+ coords_l: 0
+ coords_r: 800
+ coords_t: 800
+ coords_b: 0
+ area_l: 0
+ area_r: 800
+ area_t: 800
+ area_b: 0
+ id: 300
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless.06caf7760
+}
+
+ui::text : _nameless._.displayint2 {
+ text: "<ret>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=40 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 left=0.35 right=1 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n"
+ coords_l: 48
+ coords_r: 176
+ coords_t: 692
+ coords_b: 436
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display2
+}
+
+ui::text_common : _nameless._.oilwater {
+ value: "Temperatures"
+ look_template: txt.peterbilt.389.text0
+ text: ""
+ coords_l: 107
+ coords_r: 658
+ coords_t: 655
+ coords_b: 572
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 0
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display2
+}
+
+ui::text_common : _nameless._.watertext {
+ value: "Water"
+ look_template: txt.peterbilt.389.text1.neo
+ text: ""
+ coords_l: 170
+ coords_r: 366
+ coords_t: 572
+ coords_b: 482
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display2
+}
+
+ui::text_common : _nameless._.watertemp {
+ value: "99|F"
+ look_template: txt.peterbilt.389.temp
+ text: ""
+ coords_l: 366
+ coords_r: 646
+ coords_t: 572
+ coords_b: 482
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1010
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display2
+}
+
+ui::text_common : _nameless._.oiltext {
+ value: "Oil"
+ look_template: txt.peterbilt.389.text1.neo
+ text: ""
+ coords_l: 170
+ coords_r: 366
+ coords_t: 482
+ coords_b: 392
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display2
+}
+
+ui::text_common : _nameless._.oiltemp {
+ value: "99|F"
+ look_template: txt.peterbilt.389.temp
+ text: ""
+ coords_l: 366
+ coords_r: 646
+ coords_t: 482
+ coords_b: 392
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1090
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display2
+}
+
+###############################################################################
+# Display 3
+
+ui::group : _nameless._.display3 {
+ fitting: false
+ my_children: 4
+ my_children[0]: _nameless._.displayint3
+ my_children[1]: _nameless._.ambient
+ my_children[2]: _nameless._.temp
+ my_children[3]: _nameless._.temptext
+ //my_children[4]: _nameless._.time
+ //my_children[5]: _nameless._.timetext
+ coords_l: 0
+ coords_r: 800
+ coords_t: 800
+ coords_b: 0
+ area_l: 0
+ area_r: 800
+ area_t: 800
+ area_b: 0
+ id: 400
+ layer: 0
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless.06caf7760
+}
+
+ui::text : _nameless._.displayint3 {
+ text: "<ret>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=40 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<offset hshift=0 vshift=0><img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 right=0.35 bottom=0.35><br>\r\n<img src=/material/ui/dashboard/peterbilt_389/details.mat height=30 width=30 left=0.35 right=1 bottom=0.35><br>\r\n"
+ coords_l: 48
+ coords_r: 176
+ coords_t: 692
+ coords_b: 436
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display3
+}
+
+ui::text_common : _nameless._.ambient {
+ value: "Outside"
+ look_template: txt.peterbilt.389.text0
+ text: ""
+ coords_l: 107
+ coords_r: 658
+ coords_t: 655
+ coords_b: 572
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 0
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display3
+}
+
+ui::text_common : _nameless._.temptext {
+ value: "Temp."
+ look_template: txt.peterbilt.389.text1.neo
+ text: ""
+ coords_l: 170
+ coords_r: 366
+ coords_t: 572
+ coords_b: 482
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display3
+}
+
+ui::text_common : _nameless._.temp {
+ value: "150|F"
+ look_template: txt.peterbilt.389.temp
+ text: ""
+ coords_l: 366
+ coords_r: 646
+ coords_t: 572
+ coords_b: 482
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1000
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display3
+}
+/*
+ui::text_common : _nameless._.timetext {
+ value: "Time"
+ look_template: txt.peterbilt.389.text1.neo
+ text: ""
+ coords_l: 170
+ coords_r: 346
+ coords_t: 482
+ coords_b: 392
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display3
+}
+
+ui::text_common : _nameless._.time {
+ value: "12:12"
+ look_template: txt.peterbilt.389.num
+ text: ""
+ coords_l: 346
+ coords_r: 646
+ coords_t: 482
+ coords_b: 392
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1050
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.display3
+}*/
+
+ui::group : _nameless._.warning {
+ fitting: false
+ my_children: 2
+ my_children[0]: _nameless.06d0453ec
+ my_children[1]: _nameless.06d0453ed
+ coords_l: 0
+ coords_r: 800
+ coords_t: 800
+ coords_b: 0
+ area_l: 0
+ area_r: 800
+ area_t: 800
+ area_b: 0
+ id: 900
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless.06caf7760
+}
+
+ui::text_common : _nameless.06d0453ec {
+ value: "Truck Care\r\n"
+ look_template: txt.peterbilt.389.text0
+ text: ""
+ coords_l: 140
+ coords_r: 778
+ coords_t: 528
+ coords_b: 426
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 3
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.warning
+}
+
+ui::text_common : _nameless.06d0453ed {
+ value: "Please Call\r\n"
+ look_template: txt.peterbilt.389.text0
+ text: ""
+ coords_l: 140
+ coords_r: 777
+ coords_t: 617
+ coords_b: 515
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 3
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: _nameless._.warning
+}
+
+}

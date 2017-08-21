@@ -1,0 +1,20 @@
+SiiNunit
+{
+ui::text_template : txt.peterbilt.389.text1.neo {
+	name: "zDB  Peterbilt 389 Text kleiner"
+	text: "<color value=cc00ccff><font face=/font/big.font xscale=4 yscale=4>%0</font>"
+}
+ui::text_template : txt.peterbilt.389.gear.neo {
+	name: "zDB  Peterbilt 389 Number Gear"
+	text: "<color value=cc00ccff><align hstyle=left><font face=/font/big.font xscale=4 yscale=4>%0</font></align>"
+}
+ui::text_template : txt.peterbilt.389.cur_speed.neo {
+	name: "zDB  Peterbilt 389 speed"
+	text: "<color value=cc00ccff><align hstyle=center><font face=/font/big.font xscale=5 yscale=5>%0 %1</font></align>"
+}
+
+ui::text_template : txt.peterbilt.389.cruisectrl.neo {
+	name: "zDB  Peterbilt 389 cruise"
+	text: "<color value=cc00ccff><align hstyle=right><font face=/font/big.font xscale=4 yscale=4>%0 %1</font></align>"
+}
+}
