@@ -45,3 +45,8 @@ speed display:
 [*] odometer
 [*] trip distance
 [/list]
+
+[h1]Disclaimer[/h1]
+
+This modification is for personal use only.
+It is prohibited to upload this modification on other servers.
