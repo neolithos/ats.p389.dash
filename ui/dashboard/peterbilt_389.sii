@@ -829,46 +829,6 @@ ui::text_common : _nameless._.temp {
  apparent_depth: 0
  my_parent: _nameless._.display3
 }
-/*
-ui::text_common : _nameless._.timetext {
- value: "Time"
- look_template: txt.peterbilt.389.text1.neo
- text: ""
- coords_l: 170
- coords_r: 346
- coords_t: 482
- coords_b: 392
- area_l: 1
- area_r: 0
- area_t: 0
- area_b: 1
- id: 0
- layer: 1
- tab: -1
- pointer: -1
- apparent_depth: 0
- my_parent: _nameless._.display3
-}
-
-ui::text_common : _nameless._.time {
- value: "12:12"
- look_template: txt.peterbilt.389.num
- text: ""
- coords_l: 346
- coords_r: 646
- coords_t: 482
- coords_b: 392
- area_l: 1
- area_r: 0
- area_t: 0
- area_b: 1
- id: 1050
- layer: 1
- tab: -1
- pointer: -1
- apparent_depth: 0
- my_parent: _nameless._.display3
-}*/
 
 ui::group : _nameless._.warning {
  fitting: false
