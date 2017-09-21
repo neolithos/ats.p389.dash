@@ -104,7 +104,7 @@ ui::group : _nameless._.sharedisplay {
 # km Anzeige
 ui::text_common : _nameless._.odometer {
  value: "2234567\r\n"
- look_template: txt.peterbilt.389.lcd
+ look_template: txt.peterbilt.389.lcd.neo
  text: ""
  coords_l: 425
  coords_r: 735
@@ -125,12 +125,12 @@ ui::text_common : _nameless._.odometer {
 # km Trip
 ui::text_common : _nameless._.trip_len {
  value: "1234|km"
- look_template: txt.peterbilt.389.lcd_unit
+ look_template: txt.peterbilt.389.lcd_unit.neo
  text: ""
  coords_l: 427
  coords_r: 736
  coords_t: 178
- coords_b: 113
+ coords_b: 110
  area_l: 1
  area_r: 0
  area_t: 0
@@ -147,7 +147,7 @@ ui::text_common : _nameless._.trip_len {
 # Zeit anzeige
 ui::text_common : _nameless._.dz_oben {
  value: "12:12"
- look_template: txt.peterbilt.389.lcd
+ look_template: txt.peterbilt.389.lcd.neo
  text: ""
  coords_l: 61
  coords_r: 371
@@ -168,12 +168,12 @@ ui::text_common : _nameless._.dz_oben {
 # Laufstunden
 ui::text_common : _nameless._.dz_unten {
  value: "999|h"
- look_template: txt.peterbilt.389.lcd_unit
+ look_template: txt.peterbilt.389.lcd_unit_h.neo
  text: ""
  coords_l: 90
  coords_r: 371
  coords_t: 178
- coords_b: 113
+ coords_b: 110
  area_l: 1
  area_r: 0
  area_t: 0
@@ -676,7 +676,7 @@ ui::text_common : _nameless._.watertemp {
  area_r: 0
  area_t: 0
  area_b: 1
- id: 1010
+ id: 1090
  layer: 1
  tab: -1
  pointer: -1
@@ -716,7 +716,7 @@ ui::text_common : _nameless._.oiltemp {
  area_r: 0
  area_t: 0
  area_b: 1
- id: 1090
+ id: 1010
  layer: 1
  tab: -1
  pointer: -1
