@@ -27,7 +27,6 @@ ui::window : _nameless.06caf7760 {
  layer: 0
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: null
 }
 
@@ -46,7 +45,6 @@ ui::text : _nameless._.kgroundunlit {
  layer: -1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless.06caf7760
 }
 
@@ -65,7 +63,6 @@ ui::text : _nameless._.ackgroundlit {
  layer: -1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless.06caf7760
 }
 
@@ -96,7 +93,6 @@ ui::group : _nameless._.sharedisplay {
  layer: -1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless.06caf7760
 }
 
@@ -118,7 +114,6 @@ ui::text_common : _nameless._.odometer {
  layer: 2
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.sharedisplay
 }
 
@@ -139,7 +134,6 @@ ui::text_common : _nameless._.trip_len {
  layer: 2
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.sharedisplay
 }
 
@@ -161,7 +155,6 @@ ui::text_common : _nameless._.dz_oben {
  layer: 2
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.sharedisplay
 }
 
@@ -182,7 +175,6 @@ ui::text_common : _nameless._.dz_unten {
  layer: 2
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.sharedisplay
 }
 
@@ -206,7 +198,6 @@ ui::text_common : _nameless._.gear {
  layer: 4
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.sharedisplay
 }
 
@@ -228,7 +219,6 @@ ui::text_common : _nameless._.cur_speed {
  layer: 4
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.sharedisplay
 }
 
@@ -250,7 +240,6 @@ ui::text_common : _nameless._.cruisectrl {
  layer: 4
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.sharedisplay
 }
 
@@ -270,7 +259,6 @@ ui::text_common : _nameless._.direct {
  layer: 4
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.sharedisplay
 }
 
@@ -288,7 +276,6 @@ ui::text : _nameless._.park {
  layer: 0
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.sharedisplay
 }
 
@@ -306,7 +293,6 @@ ui::text : _nameless._.low_fuel {
  layer: 0
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.sharedisplay
 }
 
@@ -324,7 +310,6 @@ ui::text : _nameless._.low_air {
  layer: 0
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.sharedisplay
 }
 
@@ -350,7 +335,6 @@ ui::group : _nameless._.display0 {
  layer: -1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless.06caf7760
 }
 
@@ -368,7 +352,6 @@ ui::text : _nameless._.displayint0 {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display0
 }
 
@@ -388,7 +371,6 @@ ui::text_common : _nameless._.economy {
  layer: 0
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display0
 }
 
@@ -408,7 +390,6 @@ ui::text_common : _nameless._.average {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display0
 }
 
@@ -428,7 +409,6 @@ ui::text_common : _nameless._.instant {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display0
 }
 
@@ -456,7 +436,6 @@ ui::group : _nameless._.display1 {
  layer: -1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless.06caf7760
 }
 
@@ -474,7 +453,6 @@ ui::text : _nameless._.displayint1 {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display1
 }
 
@@ -494,7 +472,6 @@ ui::text_common : _nameless._.fuel_text {
  layer: 0
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display1
 }
 
@@ -514,7 +491,6 @@ ui::text_common : _nameless._.fueltext {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display1
 }
 
@@ -534,7 +510,6 @@ ui::text_common : _nameless._.fuel {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display1
 }
 
@@ -554,7 +529,6 @@ ui::text_common : _nameless._.fueldisttext {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display1
 }
 
@@ -574,7 +548,6 @@ ui::text_common : _nameless._.fueldist {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display1
 }
 
@@ -602,7 +575,6 @@ ui::group : _nameless._.display2 {
  layer: -1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless.06caf7760
 }
 
@@ -620,7 +592,6 @@ ui::text : _nameless._.displayint2 {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display2
 }
 
@@ -640,7 +611,6 @@ ui::text_common : _nameless._.oilwater {
  layer: 0
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display2
 }
 
@@ -660,7 +630,6 @@ ui::text_common : _nameless._.watertext {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display2
 }
 
@@ -680,7 +649,6 @@ ui::text_common : _nameless._.watertemp {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display2
 }
 
@@ -700,7 +668,6 @@ ui::text_common : _nameless._.oiltext {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display2
 }
 
@@ -720,7 +687,6 @@ ui::text_common : _nameless._.oiltemp {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display2
 }
 
@@ -748,7 +714,6 @@ ui::group : _nameless._.display3 {
  layer: 0
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless.06caf7760
 }
 
@@ -766,7 +731,6 @@ ui::text : _nameless._.displayint3 {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display3
 }
 
@@ -786,7 +750,6 @@ ui::text_common : _nameless._.ambient {
  layer: 0
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display3
 }
 
@@ -806,7 +769,6 @@ ui::text_common : _nameless._.temptext {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display3
 }
 
@@ -826,7 +788,6 @@ ui::text_common : _nameless._.temp {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.display3
 }
 
@@ -847,7 +808,6 @@ ui::group : _nameless._.warning {
  layer: 1
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless.06caf7760
 }
 
@@ -867,7 +827,6 @@ ui::text_common : _nameless.06d0453ec {
  layer: 3
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.warning
 }
 
@@ -887,7 +846,6 @@ ui::text_common : _nameless.06d0453ed {
  layer: 3
  tab: -1
  pointer: -1
- apparent_depth: 0
  my_parent: _nameless._.warning
 }
 
